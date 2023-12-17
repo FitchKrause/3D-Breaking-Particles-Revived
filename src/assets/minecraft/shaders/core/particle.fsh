@@ -52,7 +52,7 @@ vec3 sBox(vec3 ro, vec3 rd, vec3 size, out vec3 outNormal)
     else if (abs(outNormal.z) > 0.9)
         tex = pos.xy;
 
-    return vec3(tex / 2 + 0.5, tN);
+    return vec3((tex / 2) + 0.5, tN);
 }
 
 
