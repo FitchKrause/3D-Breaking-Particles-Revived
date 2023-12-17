@@ -3,7 +3,7 @@
 #moj_import <fog.glsl>
 
 //Cubes
-#define CUBE_SIZE 1 / 16.0
+#define CUBE_SIZE 1ю5 / 16.0
 #define LIGHT_DIRECTION vec3(0.341882, -0.911685, 0.227921)
 #define LIGHT_POWER 1.2
 #define LIGHT_BIAS 0.2
@@ -52,7 +52,7 @@ vec3 sBox(vec3 ro, vec3 rd, vec3 size, out vec3 outNormal)
     else if (abs(outNormal.z) > 0.9)
         tex = pos.xy;
 
-    return vec3(tex / 4 + 0.5, tN);
+    return vec3(tex / 2 + 0.5, tN);
 }
 
 
